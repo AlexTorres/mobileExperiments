@@ -3,11 +3,9 @@ var startRotation;
 var startScale;
 function arranque()
 {
-
 	window.onorientationchange=updateOrientation;
-    alert("display orientation");
-        
- }
+	alert("display orientation");
+}
 
 function updateOrientation()
  {
