@@ -7,17 +7,13 @@ function arranque()
 	window.onorientationchange=updateOrientation;
     alert("display orientation");
         
-    
-
-}
+ }
 
 function updateOrientation()
  {
  	
     var displayStr = "Orientation : ";
-
-
-    switch(window.orientation)
+	switch(window.orientation)
     {
         case 0:
             displayStr += "Portrait";
