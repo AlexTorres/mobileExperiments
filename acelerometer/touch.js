@@ -21,8 +21,11 @@ function onDeviceMotion(event)
     var accelerationY = event.accelerationIncludingGravity.y;  
     var accelerationZ = event.accelerationIncludingGravity.z;
 
-element.style.webkitTransform ='rotate(' + (accelerationX*28.6478898) + 'deg)';
-        $("#trace h6").replaceWith('<h6> x :'+ accelerationX+'</h6>');
+element.style.webkitTransform ='rotate(' + accelerationX*28 + 'deg)';
+       
+        document.getElementById("alpha").innerHTML ='alpha' +Math.round(event.rotationRate.alpha) ;
+        document.getElementById("beta").innerHTML = 'beta' + Math.round(event.rotationRate.beta);
+        document.getElementById("gamma").innerHTML = 'gamma' + Math.round(event.rotationRate.gamma);
 
 
 }
